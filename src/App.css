@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.weather {
+  font-family: "Nunito", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(195, 239, 252), rgb(250, 249, 249));
+}
+
+.container {
+  width: 400px;
+  box-shadow: 2px 3px 8px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+}
+
+.name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.searchContainer {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px rgb(148, 147, 147);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 380px;
+}
+
+.searchContainer:hover {
+  box-shadow: 3px 3px 15px rgb(32, 32, 32);
+}
+
+.cityName {
+  padding: 6px;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  font-size: 17px;
+  background-color: rgb(210, 242, 252);
+  width: 300px;
+}
+
+.searchIcon {
+  font-size: 25px;
+  padding: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn {
+  padding: 8px;
+  border: none;
+  background-color: blue;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(52, 52, 141);
+}
+
+.temp {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#tempimg {
+  margin-top: 30px;
+  width: 93px;
+  height: 90px;
+}
+
+.temperature {
+  font-size: 28px;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+}
+
+.other {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  margin-left: 19px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.addInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.anotherDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.gen {
+  font-size: 50px;
+  color: rgb(6, 82, 224);
+}
+
+.gen1 {
+  font-size: 40px;
+  color: rgb(6, 82, 224);
+}
+
+#min_max {
+  /* color: gray; */
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+#desc {
+  color: gray;
+}
+
+/* error page styling start */
+
+.errorConatainer {
+  padding: 20px;
+}
+
+/* error page styling end */
+
+/*  media query  */
+
+@media only screen and (max-width: 412px) {
+  .searchIcon {
+    font-size: 35px;
+    padding: 5px;
+  }
+  .searchContainer {
+    width: 310px;
+  }
+  .container {
+    width: 310px;
+  }
+}
